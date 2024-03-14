@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left-panel {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(217, 215, 215);
+    padding: 2%;
+}
