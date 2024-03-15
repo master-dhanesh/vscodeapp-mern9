@@ -20,12 +20,16 @@
                 <ul>
                     <% files.forEach(function(file,index){ %>
                     <!--  -->
-                    <li><a href=""><%= file%></a></li>
+                    <li><a href="/file/<%= file %>"><%= file%></a></li>
                     <!--  -->
                     <% }) %>
                 </ul>
             </div>
-            <div class="right-panel"></div>
+            <div class="right-panel">
+                <form action="">
+                    <textarea cols="100" rows="20"><%= filedata%></textarea>
+                </form>
+            </div>
         </div>
     </body>
 </html>
