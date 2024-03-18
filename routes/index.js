@@ -26,4 +26,9 @@ router.post("/createfile", function (req, res, next) {
     res.redirect(`/file/${filename}`);
 });
 
+router.get("/delete/:filename", function (req, res, next) {
+    fs.unlinkSync(path.join(globalpath, req.params.filename));
+    res.redirect("/");
+});
+
 module.exports = router;
