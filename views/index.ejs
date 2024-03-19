@@ -29,8 +29,12 @@
                 </ul>
             </div>
             <div class="right-panel">
-                <form action="">
-                    <textarea cols="100" rows="20"><%= filedata%></textarea>
+                <form action="/update/<%= filename %>" method="post">
+                    <textarea name="filedata" cols="100" rows="20">
+<%= filedata%></textarea
+                    >
+                    <br /><br />
+                    <button>Save</button>
                 </form>
             </div>
         </div>
